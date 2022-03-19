@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <title>Title</title>
+          <script src="https://cdn.tailwindcss.com"></script>
+          <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+     </head>
+     <body>
+          <div class="w-screen h-screen flex flex-col justify-center items-center">
+               <form class="w-96 h-48 flex flex-col">
+                    <h1>Upload the  Input JSON File</h1>
+                    <input type="file" id="input" class="border border-black p-2 m-2"/>
+                    <div class="w-full justify-end">
+                         <button id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                              Submit
+                         </button>
+                    </div>
+
+               </form>
+               <h1 id="output"></h1>
+
+          </div>
+          <script type="module" src="script.js"></script>
+     </body>
+</html>
