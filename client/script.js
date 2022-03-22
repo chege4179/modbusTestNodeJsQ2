@@ -2,6 +2,7 @@ const axios = window.axios
 const submitButton =document.getElementById("submit")
 const input = document.getElementById("input")
 const output = document.getElementById("output")
+
 submitButton.addEventListener("click",(e) => {
 	e.preventDefault()
 	if (input.files.length === 0){
@@ -35,12 +36,4 @@ submitButton.addEventListener("click",(e) => {
 			console.log("Reader erroe",reader.error);
 		};
 	}
-
 })
-// axios.get("https://jsonplaceholder.typicode.com/posts")
-// .then((res) => {
-// 	console.log(res.data.length)
-// })
-// .catch((err) => {
-// 	console.log(err)
-// })
